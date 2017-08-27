@@ -9,6 +9,8 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.mockito.runners.MockitoJUnitRunner;
 
+import com.qianwenjun.study.injectmock.DoAction;
+
 @RunWith(MockitoJUnitRunner.class)
 public class MockTest {
 		
@@ -25,15 +27,15 @@ public class MockTest {
 		
 		Mockito.when(doVertify.doVertifymethon()).thenReturn(true).thenReturn(false);
 		
-//		action.doActionTest();
+		action.doActionTest();
 		
-		if (doVertify.doVertifymethon()){
-			DoFirst first = new DoFirst();
-			first.doFirstAction();
-			if (doVertify.doVertifymethon()){
-				DoTwice twice = new DoTwice();
-				twice.doTwiceAction();
-			}
-		}
+//		if (doVertify.doVertifymethon()){
+//			DoFirst first = new DoFirst();
+//			first.doFirstAction();
+//			if (doVertify.doVertifymethon()){
+//				DoTwice twice = new DoTwice();
+//				twice.doTwiceAction();
+//			}
+//		}
 	}
 }
